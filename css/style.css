@@ -149,6 +149,10 @@ section {
   height: 8.5rem;
 }
 
+.phone-block {
+  text-align: right;
+}
+
 .phone-link {
   display: inline-block;
   font-family: 'ProximaNova_bold', sans-serif;
@@ -157,5 +161,43 @@ section {
   height: 7rem;
   line-height: 7rem;
   color: #1a1820;
+}
+
+@media (max-width: 991px) {
+  .main {
+    background-position: top right;
+    background-size: cover;
+  }
+  .main-content h1 {
+    margin-bottom: 0;
+  }
+  .main-subtitle {
+    margin-bottom: 1rem;
+  }
+  .main-trigger {
+    margin-top: 2rem;
+  }
+  .phone-block {
+    text-align: center;
+  }
+  .main-content {
+    margin-top: 3rem;
+  }
+  .main-title {
+    padding-bottom: 3rem;
+    text-align: center;
+  }
+}
+
+@media (max-width: 767px) {
+  .header {
+    margin-bottom: 15rem;
+    text-align: center;
+  }
+  .header .justify-content-end {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 /*# sourceMappingURL=style.css.map */

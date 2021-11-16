@@ -166,17 +166,66 @@ section {
 	}
 }
 
+// Шапка
 .header {
 	padding-top: 1.5rem;
 	height: 8.5rem;
 }
 
-.phone-link {
-	display: inline-block;
-	@include bold();
-	font-weight: 900;
-	font-size: 2rem;
-	height: 7rem;
-	line-height: 7rem;
-	color: $text;
+// Телефон
+.phone {
+	&-block {
+		text-align: right;
+	}
+	&-link {
+		display: inline-block;
+		@include bold();
+		font-weight: 900;
+		font-size: 2rem;
+		height: 7rem;
+		line-height: 7rem;
+		color: $text;
+	}
 }
+
+// Экран меньше 991px
+@media (max-width: 991px) {
+	.main {
+		background-position: top right;
+		background-size: cover;
+		&-content {
+			h1 {
+				margin-bottom: 0;
+			}
+		}
+		&-subtitle {
+			margin-bottom: 1rem;
+		}
+		&-trigger {
+			margin-top: 2rem;
+		}
+	}
+	.phone-block {
+		text-align: center;
+	}
+	.main-content {
+		margin-top: 3rem;
+	}
+	.main-title {
+		padding-bottom: 3rem;
+		text-align: center;
+	}
+}
+
+// Экран меньше 767px
+@media (max-width: 767px) {
+	.header {
+		margin-bottom: 15rem;
+		text-align: center;
+		}
+	.header {
+		.justify-content-end {
+			justify-content: center;
+		}		
+	}
+	}
