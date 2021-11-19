@@ -172,6 +172,8 @@ section {
 	height: 8.5rem;
 }
 
+
+
 // Телефон
 .phone {
 	&-block {
@@ -222,10 +224,5 @@ section {
 	.header {
 		margin-bottom: 15rem;
 		text-align: center;
-		}
-	.header {
-		.justify-content-end {
-			justify-content: center;
-		}		
 	}
-	}
+}
