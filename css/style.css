@@ -32,6 +32,8 @@ button:focus, input:focus, a:focus {
   padding: 2rem 3rem;
   border-radius: .8rem;
   font-size: 1.2rem;
+  line-height: 1.2;
+  font-weight: 600;
   background-color: #ffb504;
   color: #fff;
   text-transform: uppercase;
@@ -47,6 +49,13 @@ button:focus, input:focus, a:focus {
 
 section {
   padding: 10rem 0;
+}
+
+.section-header {
+  margin: 2rem 0 13rem;
+  font-family: 'ProximaNova_bold', sans-serif;
+  text-align: center;
+  font-size: 3.6rem;
 }
 
 .main {
@@ -161,6 +170,28 @@ section {
   height: 7rem;
   line-height: 7rem;
   color: #1a1820;
+}
+
+.features-block {
+  text-align: center;
+}
+
+.features-block h3 {
+  font-size: 2rem;
+  font-family: 'ProximaNova_bold', sans-serif;
+  margin-top: 6.4rem;
+  margin-bottom: 3.5rem;
+}
+
+.features-block p {
+  display: inline-block;
+  width: 80%;
+  font-size: 1.4rem;
+}
+
+.features-img img {
+  display: block;
+  margin: 0 auto;
 }
 
 @media (max-width: 991px) {
