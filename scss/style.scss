@@ -223,6 +223,30 @@ section {
 		}		
 	}
 }
+.prev {
+	position: absolute;
+	z-index: 99;
+	width: 2rem;
+	height: 2rem;
+	border: none;
+	background: url(../img/features/left_arrow.svg) center no-repeat;
+	background-size: 70%;
+	top: 50%;
+	left: 0;
+	opacity: 0.3;
+}
+.next {
+	position: absolute;
+	z-index: 99;
+	width: 2rem;
+	height: 2rem;
+	border: none;
+	background: url(../img/features/right_arrow.svg) center no-repeat;
+	background-size: 70%;
+	top: 50%;
+	right: 0;
+	opacity: 0.3;
+}
 
 // Экран меньше 991px
 @media (max-width: 991px) {
