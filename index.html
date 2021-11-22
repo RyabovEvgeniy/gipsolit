@@ -7,7 +7,7 @@
 
    <!-- Bootstrap CSS -->
    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
-	<!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.3/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script> -->
+	
 	<!-- Подключаем стили Slick Slider -->
 	<link rel="stylesheet" href="slick/slick.css">
 	<link rel="stylesheet" href="slick/slick-theme.css">
@@ -38,7 +38,7 @@
 					</div>
 
 					<div class="col-xl-3 col-lg-3 col-md-4 col-sm-12">
-						<button class="button header-btn">получить консультацию</button>
+						<button class="button header-btn popup-btn">получить консультацию</button>
 					</div>
 				</div>
 			</div>
@@ -130,11 +130,11 @@
 		<div class="popup-dialog">
 			<!-- Содержимое модальное окна -->
 			<div class="popup-content">
-				<button class="popup-close"></button>
+				<button class="popup-close">&times;</button>
 				<!-- Заголовок окна -->
 				<h4 class="popup-header">Заинтересовало?</h4>
 				<p> Оставьте контактные данные <br>для связи</p>
-				<div class="main-form">
+				<div class="main-form popup-form">
 					<form action="#">
 						<label for="#">Ваше имя</label>
 								<input type="text" class="main-form-input">
@@ -151,16 +151,31 @@
 
    <!-- Optional JavaScript -->
    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-   <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+	<!-- Обяательно должна быть подключена библиотека jQuery -->
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+   <!-- <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script> -->
+   <!-- <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script> -->
+
+	<!-- Для модаьных окон от bootstrap нужно поделючить js-файлы -->
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
 
 	<!-- Подключаем саму библиотеку Slick Slider -->
 	<script src="slick/slick.min.js"></script>
 
-	<!-- Инициализируем слайдер Slick Slider -->
+	
 	<script>
 		$(document).ready(function(){
+			/* Модальное окно на кнопке получить консультацию */
+			$('.popup-btn').on('click', function(event) {
+				event.preventDefault();
+				$('.popup').fadeIn();
+			});
+			$('.popup-close').on('click', function () {
+				event.preventDefault();
+				$('.popup').fadeOut();
+			});
+			/* Инициализируем слайдер Slick Slider */
 			$('.features-slider').slick({
 				infinite: true,
 				slidesToShow: 4,
