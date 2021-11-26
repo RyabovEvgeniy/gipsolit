@@ -74,10 +74,19 @@ section {
 	padding: 10rem 0;
 }
 .section-header {
-	margin: 2rem 0 13rem;
-	@include bold();
+	&_light {
+		color: $light;
+	}
+	h2 {
+		@include bold();
+		font-size: 3.6rem;
+	}
+	padding: {
+		font-size: 1.4rem;
+	};
+	margin: 2rem 0 13rem;	
 	text-align: center;
-	font-size: 3.6rem;
+	
 }
 
 // main
@@ -248,6 +257,64 @@ section {
 }
 
 // Оформление блока Цены
+.price {
+	background: $icons-color url(../img/prices/prices_bg.jpg) center;
+	p {
+		font-size: 1.8rem;
+		font-weight: 400;
+		margin-top: 4.9rem;
+	}
+	&-header-btn {
+		margin-top: 2rem;
+	}
+
+// Карточки с тарифами
+	&-block {
+		padding: 1rem 3rem 4rem;
+		min-height: 50rem;
+		background-color: $light;
+		box-shadow: 0px 14px 21px 0px;
+		text-align: center;
+		img {
+			display: inline-block;
+			max-width: 30rem;
+			width: 100%;
+			margin-bottom: 2rem;
+		}
+		h4 {
+			margin: 3rem 0;
+			font-size: 1.9rem;
+			@include bold();
+		}
+	}
+	&-tag {
+		display: block;
+		margin-bottom: 2rem;
+		font-size: 1.9rem;
+		@include bold();
+
+	}
+	&-list {
+		padding: 0;
+		list-style: none;
+		min-height: 14rem;
+		font-size: 1.6rem;
+		line-height: 1.6;
+		li {
+			&::before {
+				content: '';
+				display: inline-block;
+				margin-right: 1rem;
+				width: 1rem;
+				height: 1rem;
+				background: url(../img/check.svg) no-repeat center;
+				background-size: 100%;
+				
+			}
+		}
+	}
+	
+}
 
 // Оформление модальных окон
 .popup {
