@@ -496,6 +496,11 @@ section {
 	.price-list {
 		min-height: 16rem;
 	}
+	.feedback {
+		&-form {
+			padding: 3rem 5rem;
+		}
+	}
 	
 }
 
@@ -538,6 +543,12 @@ section {
 	.section-header_light {
 		margin-bottom: 0;
 	}
+	.fotorama {
+		margin-bottom: 3rem;
+	}
+	.hand {
+		display: none;
+	}
 }
 
 // Экран меньше 767px
@@ -545,5 +556,23 @@ section {
 	.header {
 		margin-bottom: 15rem;
 		text-align: center;
+	}
+	.feedback {
+		&-prev-btn {
+			left: 0;
+		}
+		&-next-btn {
+			right: 0;
+		}
+	}
+	.main-content {
+		h1 {
+			font-size: 3rem;
+		}
+	}
+	.section-header {
+		h2 {
+			font-size: 3rem;
+		}
 	}
 }
