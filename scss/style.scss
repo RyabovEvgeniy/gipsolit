@@ -433,7 +433,24 @@ section {
 }
 
 // Секция схема работы
-
+.scheme {
+	background: #fff url(../img/sheme/scheme_bg.png) bottom right -10rem no-repeat;
+	background-size: 65rem;
+	&-block {
+		min-height: 30rem;
+		img {
+			margin-bottom: 3.3rem;
+		}
+		h3 {
+			font-size: 2rem;
+			@include bold();
+		}
+		p {
+			font-size: 1.7rem;
+		}
+	}
+	
+}
 
 // Оформление модальных окон
 .popup {

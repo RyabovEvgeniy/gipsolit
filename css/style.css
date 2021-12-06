@@ -419,6 +419,28 @@ section {
   max-width: 30rem;
 }
 
+.scheme {
+  background: #fff url(../img/sheme/scheme_bg.png) bottom right -10rem no-repeat;
+  background-size: 65rem;
+}
+
+.scheme-block {
+  min-height: 30rem;
+}
+
+.scheme-block img {
+  margin-bottom: 3.3rem;
+}
+
+.scheme-block h3 {
+  font-size: 2rem;
+  font-family: 'ProximaNova_bold', sans-serif;
+}
+
+.scheme-block p {
+  font-size: 1.7rem;
+}
+
 .popup {
   display: none;
   position: fixed;
