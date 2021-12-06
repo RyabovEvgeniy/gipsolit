@@ -569,5 +569,12 @@ section {
   .section-header h2 {
     font-size: 3rem;
   }
+  .scheme {
+    background: no-repeat;
+    text-align: center;
+  }
+  .scheme-block {
+    min-height: 20rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */

@@ -596,4 +596,11 @@ section {
 			font-size: 3rem;
 		}
 	}
+	.scheme {
+		background: no-repeat;
+		text-align: center;
+		&-block {
+			min-height: 20rem;
+		}
+	}
 }
