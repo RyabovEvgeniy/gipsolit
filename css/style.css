@@ -495,6 +495,7 @@ section {
 
 .problems-list {
   border: 1px solid;
+  margin-bottom: 2rem;
   padding: 2rem;
   min-height: 43rem;
 }
@@ -616,6 +617,9 @@ section {
   .feedback-form {
     padding: 3rem 5rem;
   }
+  .problems-list {
+    min-height: 45rem;
+  }
 }
 
 @media (max-width: 991px) {
@@ -657,9 +661,15 @@ section {
   .hand {
     display: none;
   }
+  .problems-list {
+    min-height: auto;
+  }
+  .problems-women {
+    display: none;
+  }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 991px) and (max-width: 767px) {
   .header {
     margin-bottom: 15rem;
     text-align: center;

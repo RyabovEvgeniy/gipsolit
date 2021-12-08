@@ -501,6 +501,7 @@ section {
 	}
 	&-list {
 		border: 1px solid;
+		margin-bottom: 2rem;
 		padding: 2rem;
 		min-height: 43rem;
 		h4 {
@@ -615,7 +616,11 @@ section {
 			padding: 3rem 5rem;
 		}
 	}
-	
+	.problems {
+		&-list {
+			min-height: 45rem;
+		}
+	}
 }
 
 
@@ -663,6 +668,13 @@ section {
 	.hand {
 		display: none;
 	}
+	.problems {
+		&-list {
+			min-height: auto;
+		}
+		&-women {
+			display: none;
+		}
 }
 
 // Экран меньше 767px
@@ -695,5 +707,7 @@ section {
 		&-block {
 			min-height: 20rem;
 		}
+	}
+
 	}
 }
