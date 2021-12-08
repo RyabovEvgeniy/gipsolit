@@ -104,7 +104,7 @@ section {
 	padding: 10rem 0;
 }
 .section-header {
-	&_light {
+	&__light {
 		color: $light;
 	}
 	h2 {
@@ -597,7 +597,7 @@ section {
 			margin-bottom: 2rem;			
 		}
 	}
-	.section-header_light {
+	.section-header__light {
 		margin-bottom: 0;
 	}
 	.fotorama {

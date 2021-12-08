@@ -88,7 +88,7 @@ section {
   text-align: center;
 }
 
-.section-header_light {
+.section-header__light {
   color: #fff;
 }
 
@@ -581,7 +581,7 @@ section {
   .price-block {
     margin-bottom: 2rem;
   }
-  .section-header_light {
+  .section-header__light {
     margin-bottom: 0;
   }
   .fotorama {
