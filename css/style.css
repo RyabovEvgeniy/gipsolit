@@ -481,6 +481,73 @@ section {
   font-size: 1.9rem;
 }
 
+.problems {
+  position: relative;
+}
+
+.problems-women {
+  position: absolute;
+  width: 30rem;
+  bottom: 0;
+  left: 50%;
+  margin-left: -19rem;
+}
+
+.problems-list {
+  border: 1px solid;
+  padding: 2rem;
+  min-height: 43rem;
+}
+
+.problems-list h4 {
+  font-size: 2.1rem;
+  font-family: 'ProximaNova_bold', sans-serif;
+}
+
+.problems-list ul {
+  list-style: none;
+  font-size: 1.6rem;
+  padding-left: 0;
+  padding-top: 5rem;
+}
+
+.problems-list ul li {
+  margin-bottom: 3rem;
+  position: relative;
+  padding-left: 3.5rem;
+}
+
+.problems-list ul li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 3rem;
+  height: 3rem;
+}
+
+.problems-list__bad {
+  border-color: #e8e8e8;
+}
+
+.problems-list__bad h4 {
+  opacity: 0.5;
+}
+
+.problems-list__bad ul li::before {
+  background: url(../img/problems/problem.svg) no-repeat center;
+}
+
+.problems-list__good {
+  border-color: #70c849;
+}
+
+.problems-list__good ul li::before {
+  background: url(../img/problems/checked_symbol.svg) no-repeat center;
+}
+
 .popup {
   display: none;
   position: fixed;

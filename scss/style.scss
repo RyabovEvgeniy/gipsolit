@@ -39,6 +39,7 @@ $danger: #ff0000;
 $bg-light: #f5f5f5;
 $light: #fff;
 $border-input: #dddddd; 
+$problems-color: #e8e8e8;
 
 // Basic setting
 html {
@@ -485,6 +486,62 @@ section {
 		color: $light;
 		@include bold();
 		font-size: 1.9rem;
+	}
+}
+
+// Мы развеем все опасения
+.problems {
+	position: relative;
+	&-women {
+		position: absolute;
+		width: 30rem;
+		bottom: 0;
+		left: 50%;
+		margin-left: -19rem;
+	}
+	&-list {
+		border: 1px solid;
+		padding: 2rem;
+		min-height: 43rem;
+		h4 {
+			font-size: 2.1rem;
+			@include bold();			
+		}
+		ul {
+			list-style: none;	
+			font-size: 1.6rem;
+			padding-left: 0;
+			padding-top: 5rem;
+			li {
+				&::before {
+					content: '';
+					position: absolute;
+					left: 0;
+					top: 50%;
+					transform: translateY(-50%);
+					width: 3rem;
+					height: 3rem;
+				}
+				margin-bottom: 3rem;
+				position: relative;
+				padding-left: 3.5rem;
+			}
+		}
+		&__bad {
+			border-color: $problems-color;
+			h4 {
+				opacity: 0.5;
+			}
+			ul li::before {
+				background: url(../img/problems/problem.svg) no-repeat center;
+			}
+		}
+		&__good {
+			border-color: $icons-color;
+			ul li::before {
+				background: url(../img/problems/checked_symbol.svg) no-repeat center;
+			}
+		}
 	}
 }
 
