@@ -53,6 +53,7 @@ button, input, a, textarea {
 		outline: none;
 	}
 }
+
 .button {	
 	padding: 2rem 3rem;
 	border-radius: .8rem;
@@ -543,6 +544,33 @@ section {
 				background: url(../img/problems/checked_symbol.svg) no-repeat center;
 			}
 		}
+	}
+}
+
+// Материалы
+.materials {
+	background-color: #f5f5f5;
+	&-link {
+		font-size: 1.6rem;
+		line-height: 1.8rem;
+		text-decoration: underline;
+		color: $icons-color;		
+		&:hover {
+			color: darken($icons-color, 10%);	
+		}	
+	}
+	&-offer {
+		margin-top: 4rem;
+		text-align: center;
+		font-size: 2rem;
+	}
+	&-text {
+		font-size: 1.9rem;
+		margin-top: 4.9rem;
+	}
+	img {
+		display: block;
+		margin: 0 auto;		
 	}
 }
 
