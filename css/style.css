@@ -580,6 +580,19 @@ section {
   margin: 0 auto;
 }
 
+.tour {
+  background: #fff url("../img/tour/tour.jpg") center no-repeat;
+  background-size: cover;
+}
+
+.tour-subtitle {
+  font-size: 2.4rem;
+}
+
+.tour-button {
+  font-size: 1.4rem;
+}
+
 .popup {
   display: none;
   position: fixed;

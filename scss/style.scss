@@ -574,6 +574,18 @@ section {
 	}
 }
 
+//Посмотрите как мы работаем
+.tour {
+	background: $light url('../img/tour/tour.jpg') center no-repeat;
+	background-size: cover;
+	&-subtitle {
+		font-size: 2.4rem;
+	}
+	&-button {
+		font-size: 1.4rem;
+	}
+}
+
 // Оформление модальных окон
 .popup {
 	display: none;
