@@ -593,6 +593,28 @@ section {
   font-size: 1.4rem;
 }
 
+.upsell {
+  background-color: #286b0a;
+}
+
+.upsell-block {
+  margin-right: 10.1rem;
+  min-height: 30rem;
+  text-align: center;
+  color: #fff;
+}
+
+.upsell-block :last-child {
+  margin-right: none;
+}
+
+.upsell-block img {
+  display: inline-block;
+  margin-bottom: 2rem;
+  width: 100%;
+  max-width: 30rem;
+}
+
 .popup {
   display: none;
   position: fixed;

@@ -40,6 +40,7 @@ $bg-light: #f5f5f5;
 $light: #fff;
 $border-input: #dddddd; 
 $problems-color: #e8e8e8;
+$upsell-bg: #286b0a;
 
 // Basic setting
 html {
@@ -574,7 +575,7 @@ section {
 	}
 }
 
-//Посмотрите как мы работаем
+// Посмотрите как мы работаем
 .tour {
 	background: $light url('../img/tour/tour.jpg') center no-repeat;
 	background-size: cover;
@@ -583,6 +584,26 @@ section {
 	}
 	&-button {
 		font-size: 1.4rem;
+	}
+}
+
+// Дополнительные услуги
+.upsell {
+	background-color: $upsell-bg;
+	&-block {
+		margin-right: 10.1rem;
+		:last-child {
+			margin-right: none;
+		}
+		img {
+			display: inline-block;
+			margin-bottom: 2rem;
+			width: 100%;
+			max-width: 30rem;
+		}
+		min-height: 30rem;
+		text-align: center;
+		color: $light;
 	}
 }
 
