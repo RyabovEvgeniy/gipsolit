@@ -590,11 +590,13 @@ section {
 // Дополнительные услуги
 .upsell {
 	background-color: $upsell-bg;
+	h2	{
+		margin-bottom: 4.9rem;
+	}
+	p {
+		font-size: 1.9rem;
+	}
 	&-block {
-		margin-right: 10.1rem;
-		:last-child {
-			margin-right: none;
-		}
 		img {
 			display: inline-block;
 			margin-bottom: 2rem;

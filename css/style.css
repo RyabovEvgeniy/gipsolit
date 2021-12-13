@@ -597,15 +597,18 @@ section {
   background-color: #286b0a;
 }
 
+.upsell h2 {
+  margin-bottom: 4.9rem;
+}
+
+.upsell p {
+  font-size: 1.9rem;
+}
+
 .upsell-block {
-  margin-right: 10.1rem;
   min-height: 30rem;
   text-align: center;
   color: #fff;
-}
-
-.upsell-block :last-child {
-  margin-right: none;
 }
 
 .upsell-block img {
