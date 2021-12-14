@@ -439,6 +439,10 @@ section {
 .scheme {
 	background: #fff url(../img/sheme/scheme_bg.png) bottom -10rem right -20rem no-repeat;
 	background-size: 65rem;
+	p {
+		font-size: 1.8rem;
+		margin-top: 4.9rem;
+	}
 	&-block {
 		min-height: 30rem;
 		img {
@@ -458,6 +462,10 @@ section {
 // Секция Все на 100% включено
 .all-inclusive	{
 	background: $bg-light;
+	p {
+		font-size: 1.8rem;
+		margin-top: 4.9rem;
+	}
 	.media {
 		min-height: 8rem;	
 		h4 {
