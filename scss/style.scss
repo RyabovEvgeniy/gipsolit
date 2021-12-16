@@ -805,6 +805,7 @@ footer {
 			display: none;
 		}
 }
+}
 
 // Экран меньше 767px
 @media (max-width: 767px) {
@@ -837,6 +838,20 @@ footer {
 			min-height: 20rem;
 		}
 	}
-
+	.contacts {
+		border-color: $bg-light;
+		background: none;
+	}
+	footer {
+		text-align: center;
+	}
+	.footer {
+		&-contacts {
+			margin: 2rem 0;
+		}
+		&-dev-logo {
+			text-align: center;
+		}
 	}
 }
+
