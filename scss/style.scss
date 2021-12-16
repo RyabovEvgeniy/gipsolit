@@ -594,7 +594,7 @@ section {
 		font-size: 2.4rem;
 	}
 	&-button {
-		padding: 1rem 2rem;
+		padding: 1rem 1rem;
 	}
 }
 
@@ -622,7 +622,7 @@ section {
 
 // Контакты
 .contacts {
-	background: $light url('../img/contacts/contacts_bg.png') center no-repeat;
+	background: $light url('../img/contacts/contacts_bg.png') center bottom no-repeat;
 	background-size: cover;
 	h2 {
 		@include bold();
@@ -649,7 +649,7 @@ section {
 		}
 	}
 	&-button {
-		padding: 1rem 2rem;
+		padding: 1rem 1rem;
 	}
 }
 

@@ -604,7 +604,7 @@ section {
 }
 
 .tour-button {
-  padding: 1rem 2rem;
+  padding: 1rem 1rem;
 }
 
 .upsell {
@@ -633,7 +633,7 @@ section {
 }
 
 .contacts {
-  background: #fff url("../img/contacts/contacts_bg.png") center no-repeat;
+  background: #fff url("../img/contacts/contacts_bg.png") center bottom no-repeat;
   background-size: cover;
 }
 
@@ -665,7 +665,7 @@ section {
 }
 
 .contacts-button {
-  padding: 1rem 2rem;
+  padding: 1rem 1rem;
 }
 
 .popup {
