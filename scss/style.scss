@@ -653,6 +653,28 @@ section {
 	}
 }
 
+// Подвал
+footer {
+	padding: 4rem 0;
+}
+.footer	{
+	&-contacts {
+		text-align: center;
+		padding-top: 0.5rem;
+		>p {
+			font-size: 2rem;
+		}
+		p {
+			margin: 0;
+		}
+	}
+	&-dev-logo {
+		text-align: right;
+		font-size: 1.1rem;
+	}
+}
+
+
 // Оформление модальных окон
 .popup {
 	display: none;
